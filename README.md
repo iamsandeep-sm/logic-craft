@@ -7,6 +7,11 @@
 ![Problems](https://img.shields.io/badge/Problems-210-orange?style=flat-square) ![Sections](https://img.shields.io/badge/Sections-19-informational?style=flat-square)
 
 </div>
+What to Know About This Repo
+
+* **The Goal:** I am personally solving all 210 problems across 6 phases to build a rock-solid foundation.
+* **Current Status:** This is a work in progress. I upload my solutions here only after writing, dry-running, and fully testing them myself.
+* **Timeline:** Because I am solving every single problem independently to ensure top-notch quality, completing the entire sheet will take some time.
 
 ---
 
