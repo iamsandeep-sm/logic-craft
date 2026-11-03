@@ -4,6 +4,9 @@
 
 Topics: while, do-while, for, break, continue, mathematical series, pattern printing.
 
+>Note - Project status: actively in progress. This repository is a living practice tracker. Every question is listed up front, but solutions are added one problem at a time as I finish and verify them.
+* Personal Practice: Every single solution in this repository is personally solved and practiced by me ~ sm
+
 Click any question to open its Python file and write your answer there.
 Total questions: **130**
 ## Folder structure
