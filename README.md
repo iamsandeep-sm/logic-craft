@@ -1,1419 +1,364 @@
-<div align="center">
-
-# Logic Building Before DSA
-
-**Question Sheet — 6 phases, 210 problems graded Easy / Medium / Hard**
-
-![Problems](https://img.shields.io/badge/Problems-210-orange?style=flat-square) ![Sections](https://img.shields.io/badge/Sections-19-informational?style=flat-square)
-
-</div>
-What to Know About This Repo
-
-* **The Goal:** I am personally solving all 210 problems across 6 phases to build a rock-solid foundation.
-* **Current Status:** This is a work in progress. I upload my solutions here only after writing, dry-running, and fully testing them myself.
-* **Timeline:** Because I am solving every single problem independently to ensure top-notch quality, completing the entire sheet will take some time.
-
----
-
-The complete question sheet to finish before you start DSA: conditionals, loops and patterns, recursion, arrays, strings and mixed problems.
-
-Language-independent. Every problem can be solved in Python, C++, Java or JavaScript. Solve on paper first, dry run every solution, and test edge cases.
-
-## Table of Contents
-
-- [Phase 0 — Prerequisites (Warm-up Problems)](#phase-0--prerequisites-warm-up-problems)
-  - [Warm-up problems](#warm-up-problems)
-- [Phase 1 — Building Conditional Logic](#phase-1--building-conditional-logic)
-  - [A. Basic checks](#a-basic-checks)
-  - [B. Real-world decision problems](#b-real-world-decision-problems)
-  - [C. Challenge problems](#c-challenge-problems)
-- [Phase 2 — Loops, Repetition and Patterns](#phase-2--loops-repetition-and-patterns)
-  - [A. Basic loops](#a-basic-loops)
-  - [B. Number problems](#b-number-problems)
-  - [C. Pattern printing (nested loops)](#c-pattern-printing-nested-loops)
-- [Phase 3 — Understanding Recursive Thinking](#phase-3--understanding-recursive-thinking)
-  - [A. Warm-up recursion](#a-warm-up-recursion)
-  - [B. Recursion on strings and arrays](#b-recursion-on-strings-and-arrays)
-  - [C. Classic recursive thinking](#c-classic-recursive-thinking)
-- [Phase 4 — Array Fundamentals and Operations](#phase-4--array-fundamentals-and-operations)
-  - [A. Traversal and basic operations](#a-traversal-and-basic-operations)
-  - [B. Rearranging and transforming](#b-rearranging-and-transforming)
-  - [C. Classic array problems](#c-classic-array-problems)
-- [Phase 5 — Working with Strings](#phase-5--working-with-strings)
-  - [A. Basic string operations](#a-basic-string-operations)
-  - [B. Character counting and comparison](#b-character-counting-and-comparison)
-  - [C. Classic string problems](#c-classic-string-problems)
-- [Phase 6 — Combining Logic and Problem Solving](#phase-6--combining-logic-and-problem-solving)
-  - [A. Mixed problems (use more than one concept)](#a-mixed-problems-use-more-than-one-concept)
-  - [B. Logic puzzles in code](#b-logic-puzzles-in-code)
-  - [C. Mini-projects (build full programs)](#c-mini-projects-build-full-programs)
-
-# Phase 0 — Prerequisites (Warm-up Problems)
-
-## Warm-up problems
-
-> Click a problem to open its solution file.
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_01.py">Print your name, age and city on three separate lines.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_02.py">Read two numbers and print their sum, difference, product, quotient and remainder.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_03.py">Swap two variables, first using a third variable, then without one.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_04.py">Convert temperature from Celsius to Fahrenheit and back.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_05.py">Read the radius and print the area and circumference of a circle.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_06.py">Read a 3-digit number and print the sum of its digits (use <code>/</code> and <code>%</code> only).</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_07.py">Convert a number of seconds into hours, minutes and seconds.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_08.py">Calculate simple interest and compound interest for given principal, rate and time.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_09.py">Print the ASCII value of a character and the character for a given ASCII value.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td align="left"><a href="P0-Warm-Up problems/Que_10.py">Read a float and print it rounded to 2 decimal places and as an integer (floor and ceil).</a></td>
-<td align="center">Easy</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 1 — Building Conditional Logic
-
-## A. Basic checks
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">1</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_01.py">Number identity: read a number and say whether it is positive, negative or zero.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">2</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_02.py">Odd or even: determine whether a given number is odd or even.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">3</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_03.py">Divisibility check: check whether a number is divisible by 3, by 5, and by both.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">4</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_04.py">Find the largest of two numbers.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">5</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_05.py">Find the largest of three numbers without using <code>max()</code>.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">6</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_06.py">Find the smallest and the second largest among three numbers.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">7</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_07.py">Check whether a character is a vowel, consonant, digit, uppercase letter, lowercase letter or special symbol.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">8</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_08.py">Check whether a year is a leap year (divisible by 4, but century years only if divisible by 400).</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">9</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_09.py">Check whether a given age qualifies for voting, driving and senior discount.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">10</td>
-<td align="left"><a href="P1-Building Conditional Logic/A. Basic checks/Que_10.py">Print the day name for a number between 1 and 7 (use if-else, then switch or match).</a></td>
-<td align="center">Easy</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Real-world decision problems
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">11</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_11.py">Grade calculator: read marks out of 100 and print the grade (A, B, C, D, F).</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">12</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_12.py">Electricity bill: first 100 units at one rate, next 100 at another, rest at a higher rate. Print the bill.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">13</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_13.py">Income tax slab calculator for a given annual income (use any slab table).</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">14</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_14.py">Triangle validity: given three sides, check whether a triangle can be formed, then classify it as equilateral, isosceles or scalene.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">15</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_15.py">Given three angles, check whether they form a valid triangle.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">16</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_16.py">Quadrant finder: given (x, y), print which quadrant or axis the point lies on.</a></td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">17</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_17.py">Leap year, valid date: given day, month and year, check whether the date is valid.</a></td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">18</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_18.py">Compute the number of days in a given month of a given year.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">19</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_19.py">ATM logic: given balance, withdrawal amount and a multiple-of-100 rule, decide whether the withdrawal is allowed.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">20</td>
-<td align="left"><a href="P1-Building Conditional Logic/B. Real-world decision problems/Que_20.py">Simple calculator: read two numbers and an operator and print the result. Handle division by zero.</a></td>
-<td align="center">Easy</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Challenge problems
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">21</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_21.py">Check whether a number is a palindrome of 3 digits without loops.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">22</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_22.py">Given the three sides, check whether the triangle is right-angled.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">23</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_23.py">Given the coordinates of three points, check whether they are collinear.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">24</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_24.py">Given a time in 24-hour format, convert it to 12-hour format with AM or PM.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">25</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_25.py">Compare two dates and print which one comes earlier.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">26</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_26.py">Rock, paper, scissors: given two players' choices, print the winner.</a></td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">27</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_27.py">Given four numbers, print them in ascending order using only if statements.</a></td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">28</td>
-<td align="left"><a href="P1-Building Conditional Logic/C. Challenge problems/Que_28.py">Zodiac sign finder from day and month of birth.</a></td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 2 — Loops, Repetition and Patterns
-
-## A. Basic loops
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">29</td>
-<td align="left">Print numbers from 1 to N, from N to 1, and only the even numbers up to N.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">30</td>
-<td align="left">Print the multiplication table of a given number.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">31</td>
-<td align="left">Sum of the first N natural numbers, and the sum of the squares.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">32</td>
-<td align="left">Factorial of a number using a loop.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">33</td>
-<td align="left">Print the Fibonacci series up to N terms.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">34</td>
-<td align="left">Compute x raised to the power n without using the power function.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">35</td>
-<td align="left">Count the digits of a number.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">36</td>
-<td align="left">Sum of the digits of a number.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">37</td>
-<td align="left">Reverse a number.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">38</td>
-<td align="left">Check whether a number is a palindrome.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">39</td>
-<td align="left">Print all factors of a number and count them.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">40</td>
-<td align="left">Check whether a number is prime.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">41</td>
-<td align="left">Print all prime numbers between 1 and N.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">42</td>
-<td align="left">Print all prime numbers up to N efficiently by checking divisors only up to the square root, then try the Sieve of Eratosthenes.</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Number problems
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">43</td>
-<td align="left">Armstrong number check (153 = 1^3 + 5^3 + 3^3). Print all Armstrong numbers in a range.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">44</td>
-<td align="left">Perfect number check (the sum of proper divisors equals the number).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">45</td>
-<td align="left">Strong number check (sum of factorials of the digits equals the number).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">46</td>
-<td align="left">GCD (HCF) of two numbers, using subtraction and then Euclid's algorithm.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">47</td>
-<td align="left">LCM of two numbers.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">48</td>
-<td align="left">Convert a decimal number to binary and a binary number to decimal.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">49</td>
-<td align="left">Convert decimal to octal and hexadecimal.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">50</td>
-<td align="left">Print the prime factorisation of a number (e.g. 360 = 2 x 2 x 2 x 3 x 3 x 5).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">51</td>
-<td align="left">Find the sum of all prime numbers below N.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">52</td>
-<td align="left">Print the first N terms of the series 1, 4, 9, 16 ... and of 2, 5, 10, 17 ...</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">53</td>
-<td align="left">Magic number or happy number check (repeatedly sum the squares of the digits).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">54</td>
-<td align="left">Count the trailing zeros in the factorial of N without computing the factorial.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">55</td>
-<td align="left">Print the Collatz sequence of a number and count the steps to reach 1.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">56</td>
-<td align="left">Find the number of set bits (1s) in the binary form of a number.</td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Pattern printing (nested loops)
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">57</td>
-<td align="left">Solid square of stars of size N.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">58</td>
-<td align="left">Hollow square of stars.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">59</td>
-<td align="left">Right-angled triangle of stars, then of numbers (1, 12, 123 ...) and then of repeating numbers (1, 22, 333 ...).</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">60</td>
-<td align="left">Inverted right-angled triangle.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">61</td>
-<td align="left">Pyramid of stars (centred).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">62</td>
-<td align="left">Inverted pyramid of stars.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">63</td>
-<td align="left">Diamond of stars.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">64</td>
-<td align="left">Hollow pyramid and hollow diamond.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">65</td>
-<td align="left">Floyd's triangle (1, 2 3, 4 5 6 ...).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">66</td>
-<td align="left">Pascal's triangle (without using a formula library).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">67</td>
-<td align="left">Number pyramid (1, 121, 12321 ...).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">68</td>
-<td align="left">Butterfly pattern.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">69</td>
-<td align="left">Alphabet triangles (A, AB, ABC ... and A, BB, CCC ...).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">70</td>
-<td align="left">Hourglass pattern.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">71</td>
-<td align="left">Spiral number matrix of size N (1 to N squared, filled in a spiral).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">72</td>
-<td align="left">Checkerboard pattern of 0s and 1s.</td>
-<td align="center">Easy</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 3 — Understanding Recursive Thinking
-
-## A. Warm-up recursion
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">73</td>
-<td align="left">Print numbers from 1 to N and from N to 1 using recursion (no loop).</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">74</td>
-<td align="left">Factorial of N using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">75</td>
-<td align="left">Sum of the first N natural numbers using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">76</td>
-<td align="left">Nth Fibonacci number using recursion. Count how many calls it makes for N = 10.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">77</td>
-<td align="left">Compute x to the power n using recursion, then in O(log n) using fast exponentiation.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">78</td>
-<td align="left">Sum of digits of a number using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">79</td>
-<td align="left">Count the digits of a number using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">80</td>
-<td align="left">Reverse a number using recursion.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">81</td>
-<td align="left">GCD of two numbers using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">82</td>
-<td align="left">Print the binary representation of a number using recursion.</td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Recursion on strings and arrays
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">83</td>
-<td align="left">Reverse a string using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">84</td>
-<td align="left">Check whether a string is a palindrome using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">85</td>
-<td align="left">Sum of all elements of an array using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">86</td>
-<td align="left">Find the maximum element of an array using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">87</td>
-<td align="left">Check whether an array is sorted using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">88</td>
-<td align="left">Linear search using recursion and binary search using recursion.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">89</td>
-<td align="left">Count the occurrences of a character in a string using recursion.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">90</td>
-<td align="left">Remove all occurrences of a character from a string using recursion.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">91</td>
-<td align="left">Print all subsequences of a string.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">92</td>
-<td align="left">Print all permutations of a string.</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Classic recursive thinking
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">93</td>
-<td align="left">Tower of Hanoi: print the moves for N disks and count them.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">94</td>
-<td align="left">Climbing stairs: count the ways to climb N steps taking 1 or 2 steps at a time.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">95</td>
-<td align="left">Print all binary strings of length N.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">96</td>
-<td align="left">Generate all valid combinations of N pairs of parentheses.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">97</td>
-<td align="left">Subset sum: check whether a subset of an array adds up to a target (recursive choose or skip).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">98</td>
-<td align="left">Print all subsets (power set) of an array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">99</td>
-<td align="left">Flood fill idea: count connected 1s in a small grid using recursion.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">100</td>
-<td align="left">Josephus problem: find the survivor for N people and step K.</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 4 — Array Fundamentals and Operations
-
-## A. Traversal and basic operations
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">101</td>
-<td align="left">Read N numbers into an array and print them in order and in reverse.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">102</td>
-<td align="left">Find the sum and average of array elements.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">103</td>
-<td align="left">Find the maximum and minimum element.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">104</td>
-<td align="left">Find the second largest and second smallest element without sorting.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">105</td>
-<td align="left">Count the even and odd numbers, and the positive, negative and zero numbers.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">106</td>
-<td align="left">Linear search: return the index of a value, or -1 if absent.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">107</td>
-<td align="left">Reverse an array in place using two pointers.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">108</td>
-<td align="left">Check whether an array is a palindrome.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">109</td>
-<td align="left">Check whether an array is sorted (ascending or descending).</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">110</td>
-<td align="left">Insert an element at a given position and delete an element from a given position.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">111</td>
-<td align="left">Copy one array into another and merge two arrays.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">112</td>
-<td align="left">Count the frequency of each element in an array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">113</td>
-<td align="left">Print the elements that appear exactly once.</td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Rearranging and transforming
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">114</td>
-<td align="left">Rotate an array to the left or right by K positions (try the reversal method).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">115</td>
-<td align="left">Move all zeroes to the end while keeping the order of the other elements.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">116</td>
-<td align="left">Separate even and odd numbers (all even first, then all odd).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">117</td>
-<td align="left">Remove duplicates from a sorted array in place.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">118</td>
-<td align="left">Merge two sorted arrays into one sorted array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">119</td>
-<td align="left">Sort an array of only 0s, 1s and 2s in one pass (Dutch national flag).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">120</td>
-<td align="left">Implement bubble sort, selection sort and insertion sort. Count the swaps for each.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">121</td>
-<td align="left">Binary search on a sorted array (iterative and recursive).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">122</td>
-<td align="left">Left rotate a 2D matrix by 90 degrees (transpose and reverse).</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Classic array problems
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">123</td>
-<td align="left">Find the missing number in an array containing 1 to N with one number missing.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">124</td>
-<td align="left">Find the duplicate number in an array of N+1 numbers from 1 to N.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">125</td>
-<td align="left">Two sum: find two numbers whose sum equals the target (first with two loops, then with a set).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">126</td>
-<td align="left">Maximum subarray sum (Kadane's algorithm).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">127</td>
-<td align="left">Find the majority element (appearing more than N/2 times).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">128</td>
-<td align="left">Leaders in an array: elements greater than everything to their right.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">129</td>
-<td align="left">Prefix sum array: answer many 'sum from index L to R' queries quickly.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">130</td>
-<td align="left">Print all pairs whose sum equals K.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">131</td>
-<td align="left">Longest run of consecutive 1s in a binary array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">132</td>
-<td align="left">Stock buy and sell: maximum profit from one buy and one sell.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">133</td>
-<td align="left">Print the elements of a 2D matrix in row order, column order and spiral order.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">134</td>
-<td align="left">Sum of each row, each column and both diagonals of a square matrix.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">135</td>
-<td align="left">Transpose of a matrix and matrix addition and multiplication.</td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 5 — Working with Strings
-
-## A. Basic string operations
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">136</td>
-<td align="left">Find the length of a string without using the built-in length function.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">137</td>
-<td align="left">Count vowels, consonants, digits, spaces and special characters.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">138</td>
-<td align="left">Reverse a string.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">139</td>
-<td align="left">Check whether a string is a palindrome (ignore case and spaces as a variation).</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">140</td>
-<td align="left">Convert a string to uppercase and to lowercase without using built-in methods.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">141</td>
-<td align="left">Toggle the case of every character.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">142</td>
-<td align="left">Count the number of words in a sentence.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">143</td>
-<td align="left">Reverse each word of a sentence, and reverse the order of the words.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">144</td>
-<td align="left">Remove all spaces from a string.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">145</td>
-<td align="left">Replace every occurrence of one character with another.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">146</td>
-<td align="left">Print the first and last character of each word.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">147</td>
-<td align="left">Capitalise the first letter of every word.</td>
-<td align="center">Easy</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Character counting and comparison
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">148</td>
-<td align="left">Count the frequency of every character in a string.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">149</td>
-<td align="left">Find the first non-repeating character.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">150</td>
-<td align="left">Find the most frequent character.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">151</td>
-<td align="left">Remove duplicate characters from a string.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">152</td>
-<td align="left">Check whether two strings are anagrams.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">153</td>
-<td align="left">Check whether two strings are rotations of each other.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">154</td>
-<td align="left">Check whether a string contains all letters of the alphabet (pangram).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">155</td>
-<td align="left">Find the common characters in two strings.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">156</td>
-<td align="left">Compare two strings lexicographically without using a comparison method.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">157</td>
-<td align="left">Check whether one string is a subsequence of another.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">158</td>
-<td align="left">Print all substrings of a string and count them.</td>
-<td align="center">Medium</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Classic string problems
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">159</td>
-<td align="left">Longest word in a sentence.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">160</td>
-<td align="left">Longest common prefix of an array of strings.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">161</td>
-<td align="left">Run-length encoding: compress aaabbc to a3b2c1 and decompress it back.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">162</td>
-<td align="left">Caesar cipher: encrypt and decrypt a message with a shift K.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">163</td>
-<td align="left">Valid parentheses: check whether brackets in a string are balanced (use a list as a stack).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">164</td>
-<td align="left">Longest palindromic substring (expand around the centre).</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">165</td>
-<td align="left">Longest substring without repeating characters.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">166</td>
-<td align="left">Implement a find (substring search) function by hand: return the first index of a pattern in a text.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">167</td>
-<td align="left">Convert a string to an integer (atoi) and an integer to a string without built-ins.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">168</td>
-<td align="left">Add two very large numbers given as strings.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">169</td>
-<td align="left">Convert an integer to its Roman numeral and back.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">170</td>
-<td align="left">Check whether a string is a valid number, an email-like format or a valid IPv4 address.</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-# Phase 6 — Combining Logic and Problem Solving
-
-## A. Mixed problems (use more than one concept)
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">171</td>
-<td align="left">Print all prime numbers in an array.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">172</td>
-<td align="left">Reverse every word of a sentence that is a palindrome and print the count.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">173</td>
-<td align="left">Print all Armstrong numbers present in an array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">174</td>
-<td align="left">Given a number, print its digits as words (123 -&gt; one two three).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">175</td>
-<td align="left">Given an array, print the sum of the digits of each element.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">176</td>
-<td align="left">Find the sum of all numbers hidden in a string (e.g. 'ab12cd3' -&gt; 15).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">177</td>
-<td align="left">Given N, print the first N prime numbers in a pattern (triangle of primes).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">178</td>
-<td align="left">Print the Fibonacci numbers that are even and below N.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">179</td>
-<td align="left">Check whether the digits of a number are in increasing order.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">180</td>
-<td align="left">Convert a number into its English words (up to 9999).</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## B. Logic puzzles in code
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">181</td>
-<td align="left">FizzBuzz: print numbers 1 to N, replacing multiples of 3 with Fizz, of 5 with Buzz and of both with FizzBuzz.</td>
-<td align="center">Easy</td>
-</tr>
-<tr>
-<td align="center">182</td>
-<td align="left">Find the missing and repeating number in an array of N numbers.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">183</td>
-<td align="left">Count pairs in an array whose difference is K.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">184</td>
-<td align="left">Print the next greater element for every element of an array.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">185</td>
-<td align="left">Check whether an array can be split into two parts with equal sums.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">186</td>
-<td align="left">Find the length of the longest increasing run of consecutive elements.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">187</td>
-<td align="left">Print the third largest unique element of an array.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">188</td>
-<td align="left">Given a string of digits, find the largest and smallest number that can be formed by rearranging.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">189</td>
-<td align="left">Check whether a number is a power of 2 without using a loop (bit trick).</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">190</td>
-<td align="left">Find the only element that appears once while every other appears twice (XOR trick).</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
-
-## C. Mini-projects (build full programs)
-
-<table>
-<thead>
-<tr>
-<th width="60px" align="center">#</th>
-<th width="640px" align="left">Problem</th>
-<th width="110px" align="center">Level</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">191</td>
-<td align="left">Number guessing game with hints (higher or lower) and a limit on attempts.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">192</td>
-<td align="left">Menu-driven calculator with at least 8 operations.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">193</td>
-<td align="left">Simple bank account simulator (deposit, withdraw, balance, history) using arrays or lists.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">194</td>
-<td align="left">Student marks manager: store marks of N students, print average, topper and grade-wise count.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">195</td>
-<td align="left">Tic-tac-toe for two players with winner detection.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">196</td>
-<td align="left">Password strength checker based on length, case, digits and symbols.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">197</td>
-<td align="left">Word frequency counter for a paragraph of text.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">198</td>
-<td align="left">To-do list in the console: add, remove, mark done, list.</td>
-<td align="center">Medium</td>
-</tr>
-<tr>
-<td align="center">199</td>
-<td align="left">Matrix-based game of life: compute one generation for a small grid.</td>
-<td align="center">Hard</td>
-</tr>
-<tr>
-<td align="center">200</td>
-<td align="left">Sudoku row, column and box validator for a filled 9 by 9 grid.</td>
-<td align="center">Hard</td>
-</tr>
-</tbody>
-</table>
-
-<p align="right"><a href="#table-of-contents">▲ Back to top</a></p>
+# Logic Building With Loops
+
+**(Before starting DSA)** — Goal: master loops, iteration and dry-run thinking.
+
+Topics: while, do-while, for, break, continue, mathematical series, pattern printing.
+
+Click any question to open its Python file and write your answer there.
+Total questions: **130**
+## Folder structure
+
+```text
+Logic_Building_Loops/
+├── README.md
+├── 01_While_Loop/   (29 solutions)
+├── 02_Do_While_Loop/   (15 solutions)
+├── 03_For_Loop/   (21 solutions)
+├── 04_Nested_Loop_Logic/   (8 solutions)
+├── 05_Break_Continue_Logic/   (7 solutions)
+├── 06_Mathematical_Series/   (15 solutions)
+├── 07_Mixed_Logical_Loop_Problems/   (10 solutions)
+└── 08_Star_Number_Pattern_Printing/   (25 solutions)
+```
+
+## Phase 1 : While Loop
+
+1. [Print all numbers from 1 to 10 using a loop.](phase_1_while_loop/q01_print_all_numbers_from_1_to_10_using_a_loop.py)
+2. [Print numbers from 10 down to 1 in reverse order.](phase_1_while_loop/q02_print_numbers_from_10_down_to_1_in_reverse_order.py)
+3. [Print all even numbers between 1 and 100.](phase_1_while_loop/q03_print_all_even_numbers_between_1_and_100.py)
+4. [Print all odd numbers between 1 and 100.](phase_1_while_loop/q04_print_all_odd_numbers_between_1_and_100.py)
+5. [Print the multiplication table of a given number from n × 1 to n × 10.](phase_1_while_loop/q05_print_the_multiplication_table_of_a_given_number.py)
+6. [Calculate and print the sum of the first n natural numbers.](phase_1_while_loop/q06_calculate_and_print_the_sum_of_the_first_n.py)
+7. [Calculate the sum of all even numbers from 1 up to n.](phase_1_while_loop/q07_calculate_the_sum_of_all_even_numbers_from_1_up.py)
+8. [Calculate the sum of all odd numbers from 1 up to n.](phase_1_while_loop/q08_calculate_the_sum_of_all_odd_numbers_from_1_up_to.py)
+9. [Calculate and print the factorial of a given number.](phase_1_while_loop/q09_calculate_and_print_the_factorial_of_a_given.py)
+10. [Find and print the product of all digits of a given number.](phase_1_while_loop/q10_find_and_print_the_product_of_all_digits_of_a.py)
+11. [Count and print the total number of digits in a given number.](phase_1_while_loop/q11_count_and_print_the_total_number_of_digits_in_a.py)
+12. [Reverse the given number and print the reversed value.](phase_1_while_loop/q12_reverse_the_given_number_and_print_the_reversed.py)
+13. [Check whether the given number is a palindrome.](phase_1_while_loop/q13_check_whether_the_given_number_is_a_palindrome.py)
+14. [Find and print the sum of digits of the given number.](phase_1_while_loop/q14_find_and_print_the_sum_of_digits_of_the_given.py)
+15. [Check whether the given number is an Armstrong number.](phase_1_while_loop/q15_check_whether_the_given_number_is_an_armstrong.py)
+16. [Check whether the given number is a Perfect number.](phase_1_while_loop/q16_check_whether_the_given_number_is_a_perfect_number.py)
+17. [Print all prime numbers between 1 and 100.](phase_1_while_loop/q17_print_all_prime_numbers_between_1_and_100.py)
+18. [Check whether the given number is a prime number.](phase_1_while_loop/q18_check_whether_the_given_number_is_a_prime_number.py)
+19. [Print the Fibonacci series up to n terms.](phase_1_while_loop/q19_print_the_fibonacci_series_up_to_n_terms.py)
+20. [Find and print the sum of the Fibonacci series up to n terms.](phase_1_while_loop/q20_find_and_print_the_sum_of_the_fibonacci_series_up.py)
+21. [Print the square of each number from 1 to n.](phase_1_while_loop/q21_print_the_square_of_each_number_from_1_to_n.py)
+22. [Print the cube of each number from 1 to n.](phase_1_while_loop/q22_print_the_cube_of_each_number_from_1_to_n.py)
+23. [Print all numbers between a and b that are divisible by 7.](phase_1_while_loop/q23_print_all_numbers_between_a_and_b_that_are.py)
+24. [Print all factors of the given number.](phase_1_while_loop/q24_print_all_factors_of_the_given_number.py)
+25. [Find and print the sum of all factors of the given number.](phase_1_while_loop/q25_find_and_print_the_sum_of_all_factors_of_the.py)
+26. [Find the HCF (Highest Common Factor) of two given numbers.](phase_1_while_loop/q26_find_the_hcf_highest_common_factor_of_two_given.py)
+27. [Find the LCM (Least Common Multiple) of two given numbers.](phase_1_while_loop/q27_find_the_lcm_least_common_multiple_of_two_given.py)
+28. [Find the smallest digit in the given number.](phase_1_while_loop/q28_find_the_smallest_digit_in_the_given_number.py)
+29. [Find the largest digit in the given number.](phase_1_while_loop/q29_find_the_largest_digit_in_the_given_number.py)
+
+## Phase 2 : do - While Loop
+
+1. [Print all numbers from 1 to 10.](phase_2_do_while_loop/q01_print_all_numbers_from_1_to_10.py)
+2. [Print the multiplication table of a given number.](phase_2_do_while_loop/q02_print_the_multiplication_table_of_a_given_number.py)
+3. [Keep taking numbers from the user until 0 is entered, then print the sum of all entered numbers.](phase_2_do_while_loop/q03_keep_taking_numbers_from_the_user_until_0_is.py)
+4. [Keep taking numbers from the user until 0 is entered, then print the largest number among all inputs.](phase_2_do_while_loop/q04_keep_taking_numbers_from_the_user_until_0_is.py)
+5. [Count and print the number of digits in the given number.](phase_2_do_while_loop/q05_count_and_print_the_number_of_digits_in_the_given.py)
+6. [Reverse the given number and print the reversed value.](phase_2_do_while_loop/q06_reverse_the_given_number_and_print_the_reversed.py)
+7. [Check whether the given number is a palindrome.](phase_2_do_while_loop/q07_check_whether_the_given_number_is_a_palindrome.py)
+8. [Check whether the given number is an Armstrong number.](phase_2_do_while_loop/q08_check_whether_the_given_number_is_an_armstrong.py)
+9. [Calculate and print the factorial of the given number.](phase_2_do_while_loop/q09_calculate_and_print_the_factorial_of_the_given.py)
+10. [Print the Fibonacci series up to the required number of terms.](phase_2_do_while_loop/q10_print_the_fibonacci_series_up_to_the_required.py)
+11. [Find the HCF (Highest Common Factor) of the given numbers.](phase_2_do_while_loop/q11_find_the_hcf_highest_common_factor_of_the_given.py)
+12. [Create a menu-driven program that allows the user to choose and perform different operations.](phase_2_do_while_loop/q12_create_a_menu_driven_program_that_allows_the_user.py)
+13. [Keep taking numbers from the user until a negative number is entered, then count how many positive numbers were entered.](phase_2_do_while_loop/q13_keep_taking_numbers_from_the_user_until_a.py)
+14. [Find and print the sum of digits of the given number.](phase_2_do_while_loop/q14_find_and_print_the_sum_of_digits_of_the_given.py)
+15. [Calculate and print the sum of even digits and the sum of odd digits of the given number separately.](phase_2_do_while_loop/q15_calculate_and_print_the_sum_of_even_digits_and.py)
+
+## Phase 3 : For Loop
+
+1. [Print all numbers from 1 to 10.](phase_3_for_loop/q01_print_all_numbers_from_1_to_10.py)
+2. [Print numbers from 10 down to 1 in reverse order.](phase_3_for_loop/q02_print_numbers_from_10_down_to_1_in_reverse_order.py)
+3. [Print all even numbers between 1 and 100.](phase_3_for_loop/q03_print_all_even_numbers_between_1_and_100.py)
+4. [Print all odd numbers between 1 and 100.](phase_3_for_loop/q04_print_all_odd_numbers_between_1_and_100.py)
+5. [Print the multiplication table of a given number.](phase_3_for_loop/q05_print_the_multiplication_table_of_a_given_number.py)
+6. [Calculate and print the factorial of a given number.](phase_3_for_loop/q06_calculate_and_print_the_factorial_of_a_given.py)
+7. [Calculate and print the factorial of every number from 1 to n.](phase_3_for_loop/q07_calculate_and_print_the_factorial_of_every_number.py)
+8. [Print all prime numbers between 1 and 100.](phase_3_for_loop/q08_print_all_prime_numbers_between_1_and_100.py)
+9. [Check whether the given number is a prime number.](phase_3_for_loop/q09_check_whether_the_given_number_is_a_prime_number.py)
+10. [Print the Fibonacci series up to the required number of terms.](phase_3_for_loop/q10_print_the_fibonacci_series_up_to_the_required.py)
+11. [Find and print the sum of the Fibonacci series.](phase_3_for_loop/q11_find_and_print_the_sum_of_the_fibonacci_series.py)
+12. [Print all factors of the given number.](phase_3_for_loop/q12_print_all_factors_of_the_given_number.py)
+13. [Find and print the sum of all factors of the given number.](phase_3_for_loop/q13_find_and_print_the_sum_of_all_factors_of_the.py)
+14. [Find the HCF (Highest Common Factor) of the given numbers.](phase_3_for_loop/q14_find_the_hcf_highest_common_factor_of_the_given.py)
+15. [Find the LCM (Least Common Multiple) of the given numbers.](phase_3_for_loop/q15_find_the_lcm_least_common_multiple_of_the_given.py)
+16. [Print the square of each number from 1 to n.](phase_3_for_loop/q16_print_the_square_of_each_number_from_1_to_n.py)
+17. [Print the cube of each number from 1 to n.](phase_3_for_loop/q17_print_the_cube_of_each_number_from_1_to_n.py)
+18. [Print all numbers between a and b that are divisible by 7.](phase_3_for_loop/q18_print_all_numbers_between_a_and_b_that_are.py)
+19. [Find and print the sum of the first n natural numbers.](phase_3_for_loop/q19_find_and_print_the_sum_of_the_first_n_natural.py)
+20. [Find and print the sum of all even numbers from 1 up to n.](phase_3_for_loop/q20_find_and_print_the_sum_of_all_even_numbers_from_1.py)
+21. [Find and print the sum of all odd numbers from 1 up to n.](phase_3_for_loop/q21_find_and_print_the_sum_of_all_odd_numbers_from_1.py)
+
+## Phase 4 : Nested Loop Logic
+
+1. [Print the multiplication tables for all numbers from 1 to 10.](phase_4_nested_loop_logic/q01_print_the_multiplication_tables_for_all_numbers.py)
+2. [Print all possible pairs (i, j) where both i and j range from 1 to n.](phase_4_nested_loop_logic/q02_print_all_possible_pairs_i_j_where_both_i_and_j.py)
+3. [For every number from 1 to n, count and print the total number of its factors.](phase_4_nested_loop_logic/q03_for_every_number_from_1_to_n_count_and_print_the.py)
+4. [Print all prime numbers up to n using nested loop checking.](phase_4_nested_loop_logic/q04_print_all_prime_numbers_up_to_n_using_nested_loop.py)
+5. [Print the Fibonacci pattern row by row, where each row prints the next Fibonacci numbers.](phase_4_nested_loop_logic/q05_print_the_fibonacci_pattern_row_by_row_where_each.py)
+    ```text
+   0
+   1 1
+   2 3 5
+   8 13 21 34
+   55 89 144 233 377
+   ```
+6. [Generate and print a number triangle pattern using nested loops.](phase_4_nested_loop_logic/q06_generate_and_print_a_number_triangle_pattern.py)
+   ```text
+   1
+   1 2
+   1 2 3
+   1 2 3 4
+   1 2 3 4 5
+   ```
+7. [Print a matrix, then calculate and display the sum of each row and the sum of each column.](phase_4_nested_loop_logic/q07_print_a_matrix_then_calculate_and_display_the_sum.py)
+8. [Print all Pythagorean triplets whose values are less than or equal to n.](phase_4_nested_loop_logic/q08_print_all_pythagorean_triplets_whose_values_are.py)
+
+## Phase 5 : Break / Continue Logic
+
+1. [Print numbers from 1 to 100, and stop the loop as soon as a number divisible by 17 is encountered.](phase_5_break_continue_logic/q01_print_numbers_from_1_to_100_and_stop_the_loop_as.py)
+2. [Print numbers from 1 to 100, but skip all numbers that are divisible by 5 and continue printing the rest.](phase_5_break_continue_logic/q02_print_numbers_from_1_to_100_but_skip_all_numbers.py)
+3. [Take 5 numbers as input, skip any number that is 0 using continue, and calculate the sum of the remaining numbers.](phase_5_break_continue_logic/q03_take_5_numbers_as_input_skip_any_number_that_is_0.py)
+4. [Search for a specific number in a list of inputs, and terminate the loop immediately when the number is found.](phase_5_break_continue_logic/q04_search_for_a_specific_number_in_a_list_of_inputs.py)
+5. [Keep taking numbers from the user and print them until a negative number appears, then stop the loop.](phase_5_break_continue_logic/q05_keep_taking_numbers_from_the_user_and_print_them.py)
+6. [Skip all odd numbers and print only the even numbers.](phase_5_break_continue_logic/q06_skip_all_odd_numbers_and_print_only_the_even.py)
+7. [Continuously add numbers in a loop and stop the loop when the sum becomes greater than 100.](phase_5_break_continue_logic/q07_continuously_add_numbers_in_a_loop_and_stop_the.py)
+
+## Phase 6 : Mathematical Series
+
+1. [Find and print the sum of the first n natural numbers.](phase_6_mathematical_series/q01_find_and_print_the_sum_of_the_first_n_natural.py)
+2. [Find and print the sum of the first n even numbers.](phase_6_mathematical_series/q02_find_and_print_the_sum_of_the_first_n_even_numbers.py)
+3. [Find and print the sum of the first n odd numbers.](phase_6_mathematical_series/q03_find_and_print_the_sum_of_the_first_n_odd_numbers.py)
+4. [Print the first n terms of an arithmetic progression for the given first term and common difference.](phase_6_mathematical_series/q04_print_the_first_n_terms_of_an_arithmetic.py)
+5. [Print the first n terms of a geometric progression for the given first term and common ratio.](phase_6_mathematical_series/q05_print_the_first_n_terms_of_a_geometric.py)
+6. [Print the Fibonacci series up to the required number of terms.](phase_6_mathematical_series/q06_print_the_fibonacci_series_up_to_the_required.py)
+7. [Find and print the sum of the Fibonacci series up to the required number of terms.](phase_6_mathematical_series/q07_find_and_print_the_sum_of_the_fibonacci_series_up.py)
+8. [Calculate and print the value of the series: 1² + 2² + 3² + … + n².](phase_6_mathematical_series/q08_calculate_and_print_the_value_of_the_series_1_2_3.py)
+9. [Calculate and print the value of the series: 1³ + 2³ + 3³ + … + n³.](phase_6_mathematical_series/q09_calculate_and_print_the_value_of_the_series_1_2_3.py)
+10. [Calculate and print the value of the series: 1 + 1/2 + 1/3 + … + 1/n.](phase_6_mathematical_series/q10_calculate_and_print_the_value_of_the_series_1_1_2.py)
+11. [Print the series of powers of two: 1 + 2 + 4 + 8 + … + 2ⁿ.](phase_6_mathematical_series/q11_print_the_series_of_powers_of_two_1_2_4_8_2.py)
+12. [Calculate and print the value of the series: 1! + 2! + 3! + … + n!.](phase_6_mathematical_series/q12_calculate_and_print_the_value_of_the_series_1_2_3.py)
+13. [Calculate and print the value of the series: 1 + x + x² + x³ + … + xⁿ.](phase_6_mathematical_series/q13_calculate_and_print_the_value_of_the_series_1_x_x.py)
+14. [Calculate and print the value of the series: x − x²/2! + x³/3! − x⁴/4! + ….](phase_6_mathematical_series/q14_calculate_and_print_the_value_of_the_series_x_x_2.py)
+15. [Check whether the given number is a Strong number, where the number equals the sum of factorials of its digits.](phase_6_mathematical_series/q15_check_whether_the_given_number_is_a_strong_number.py)
+
+## Phase 7 : Mixed Logical Loop Problems
+
+1. [Print all numbers between 1 and 100 whose sum of digits is even.](phase_7_mixed_logical_loop_problems/q01_print_all_numbers_between_1_and_100_whose_sum_of.py)
+2. [Count Total numbers between 1 & 500 are divisible by 7 but not divisible by 5.](phase_7_mixed_logical_loop_problems/q02_count_total_numbers_between_1_500_are_divisible.py)
+3. [Print all palindrome numbers between 1 and 500.](phase_7_mixed_logical_loop_problems/q03_print_all_palindrome_numbers_between_1_and_500.py)
+4. [Print all numbers from 1 to 100 whose sum of digits is a multiple of 3.](phase_7_mixed_logical_loop_problems/q04_print_all_numbers_from_1_to_100_whose_sum_of.py)
+5. [Print all numbers from 1 to n whose binary representation contains an even number of 1s.](phase_7_mixed_logical_loop_problems/q05_print_all_numbers_from_1_to_n_whose_binary.py)
+6. [Print a pattern where the i-th row prints the value i × i.](phase_7_mixed_logical_loop_problems/q06_print_a_pattern_where_the_i_th_row_prints_the.py)
+   ```text
+   1
+   4
+   9
+   16
+   25
+   ```
+7. [Find & print the sum of odd digits & the sum of even digits of the given number.](phase_7_mixed_logical_loop_problems/q07_find_print_the_sum_of_odd_digits_the_sum_of_even.py)
+8. [Print all Armstrong numbers between 1 and 1000.](phase_7_mixed_logical_loop_problems/q08_print_all_armstrong_numbers_between_1_and_1000.py)
+9. [Print all Perfect numbers between 1 and 1000.](phase_7_mixed_logical_loop_problems/q09_print_all_perfect_numbers_between_1_and_1000.py)
+10. [Find the number between 1 and n that has the maximum digit sum, and print that number along with its digit sum.](phase_7_mixed_logical_loop_problems/q10_find_the_number_between_1_and_n_that_has_the.py)
+
+## Phase 8 : Star & Number Pattern Printing
+
+1. [Print a Single Star (*)](phase_8_star_number_pattern_printing/q01_print_a_single_star.py)
+   ```text
+   *
+   ```
+2. [Print Four Stars (****)](phase_8_star_number_pattern_printing/q02_print_four_stars.py)
+   ```text
+   ****
+   ```
+3. [Print n Stars on Same Line](phase_8_star_number_pattern_printing/q03_print_n_stars_on_same_line.py)
+   ```text
+   n = 5
+   *****
+   ```
+4. [Print Square of Stars (n x n Stars)](phase_8_star_number_pattern_printing/q04_print_square_of_stars_n_x_n_stars.py)
+   ```text
+   n = 4
+   * * * *
+   * * * *
+   * * * *
+   * * * *
+   ```
+5. [Print an Increasing Triangle of Stars](phase_8_star_number_pattern_printing/q05_print_an_increasing_triangle_of_stars.py)
+   ```text
+   *
+   * *
+   * * *
+   * * * *
+   * * * * *
+   ```
+6. [Print a Right-Aligned Triangle of Stars](phase_8_star_number_pattern_printing/q06_print_a_right_aligned_triangle_of_stars.py)
+   ```text
+           *
+         * *
+       * * *
+     * * * *
+   * * * * *
+   ```
+7. [Print Stars in Even Numbers (2, 4, 6, 8, 10)](phase_8_star_number_pattern_printing/q07_print_stars_in_even_numbers_2_4_6_8_10.py)
+   ```text
+   **
+   ****
+   ******
+   ********
+   **********
+   ```
+8. [Print Stars in Odd Numbers (1, 3, 5, 7, 9) (pattern)](phase_8_star_number_pattern_printing/q08_print_stars_in_odd_numbers_1_3_5_7_9.py)
+   ```text
+   *
+   ***
+   *****
+   *******
+   *********
+   ```
+9. [Print a Centered Pyramid of Stars](phase_8_star_number_pattern_printing/q09_print_a_centered_pyramid_of_stars.py)
+   ```text
+       *
+      ***
+     *****
+    *******
+   *********
+   ```
+10. [Print Stars and Spaces Alternating (where b = blank space): (pattern)](phase_8_star_number_pattern_printing/q10_print_stars_and_spaces_alternating_where_b_blank.py)
+   ```text
+   bbbb*
+   bbb*b*
+   bb*b*b*
+   b*b*b*b*
+   *b*b*b*b*
+   ```
+11. [Print Numbers in an Increasing Sequence: (pattern)](phase_8_star_number_pattern_printing/q11_print_numbers_in_an_increasing_sequence.py)
+   ```text
+   1
+   12
+   123
+   1234
+   12345
+   ```
+12. [Print Repeated Numbers per Row: (pattern)](phase_8_star_number_pattern_printing/q12_print_repeated_numbers_per_row.py)
+   ```text
+   1
+   22
+   333
+   4444
+   55555
+   ```
+13. [Print Continuous Number Triangle (Floyd's Triangle): (pattern)](phase_8_star_number_pattern_printing/q13_print_continuous_number_triangle_floyd_s_triangle.py)
+   ```text
+   1
+   2 3
+   4 5 6
+   7 8 9 10
+   11 12 13 14 15
+   ```
+14. [Print Continuous Single-Digit Loop Pattern: (pattern)](phase_8_star_number_pattern_printing/q14_print_continuous_single_digit_loop_pattern.py)
+   ```text
+   1
+   2 3
+   4 5 6
+   7 8 9 0
+   1 2 3 4 5
+   6 7 8 9 0 1
+   2 3 4 5 6 7 8
+   ```
+15. [Print Binary Alternate Pattern: (pattern)](phase_8_star_number_pattern_printing/q15_print_binary_alternate_pattern.py)
+   ```text
+   1
+   0 1
+   0 1 0
+   1 0 1 0
+   1 0 1 0 1
+   ```
+16. [Print Sequential Alphabet Triangle: (pattern)](phase_8_star_number_pattern_printing/q16_print_sequential_alphabet_triangle.py)
+   ```text
+   A
+   B C
+   D E F
+   G H I J
+   K L M N O
+   ```
+17. [Print Repeated Alphabet Triangle: (pattern)](phase_8_star_number_pattern_printing/q17_print_repeated_alphabet_triangle.py)
+   ```text
+   A
+   B B
+   C C C
+   D D D D
+   E E E E E
+   ```
+18. [Print Column Alphabet Triangle: (pattern)](phase_8_star_number_pattern_printing/q18_print_column_alphabet_triangle.py)
+   ```text
+   A
+   A B
+   A B C
+   A B C D
+   A B C D E
+   ```
+19. [Print Continuous Alphabet Pyramid: (pattern)](phase_8_star_number_pattern_printing/q19_print_continuous_alphabet_pyramid.py)
+   ```text
+   A
+   BCD
+   EFGHI
+   JKLMNOP
+   QRSTUVWXY
+   ```
+20. [Print Number Half Pyramid: (pattern)](phase_8_star_number_pattern_printing/q20_print_number_half_pyramid.py)
+   ```text
+   1
+   12
+   123
+   1234
+   12345
+   ```
+21. [Print Palindromic Number Pyramid: (pattern)](phase_8_star_number_pattern_printing/q21_print_palindromic_number_pyramid.py)
+   ```text
+   1
+   121
+   12321
+   1234321
+   123454321
+   ```
+22. [Print Diamond / Hourglass Star Pattern](phase_8_star_number_pattern_printing/q22_print_diamond_hourglass_star_pattern.py)
+23. [Print Half Diamond Star Pattern](phase_8_star_number_pattern_printing/q23_print_half_diamond_star_pattern.py)
+   ```text
+   *
+   * *
+   * * *
+   * * * *
+   * * * * *
+   * * * *
+   * * *
+   * *
+   *
+   ```
+24. [Print Centered Diamond Star Pattern](phase_8_star_number_pattern_printing/q24_print_centered_diamond_star_pattern.py)
+   ```text
+       *
+      ***
+     *****
+    *******
+   *********
+    *******
+     *****
+      ***
+       *
+   ```
+25. [Print Decreasing-Increasing Number Pyramid Pattern: (pattern)](phase_8_star_number_pattern_printing/q25_print_decreasing_increasing_number_pyramid_pattern.py)
+   ```text
+       5
+      545
+     54345
+    5432345
+   543212345
+   ```

@@ -1,0 +1,3 @@
+"""
+Q11. Print the series of powers of two: 1 + 2 + 4 + 8 + … + 2ⁿ.
+"""
