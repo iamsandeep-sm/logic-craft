@@ -56,21 +56,11 @@ Logic_Building_Loops/
 
 ## Phase 2 : do - While Loop
 
-1. [Print all numbers from 1 to 10.](phase_2_do_while_loop/q01_print_all_numbers_from_1_to_10.py)
-2. [Print the multiplication table of a given number.](phase_2_do_while_loop/q02_print_the_multiplication_table_of_a_given_number.py)
-3. [Keep taking numbers from the user until 0 is entered, then print the sum of all entered numbers.](phase_2_do_while_loop/q03_keep_taking_numbers_from_the_user_until_0_is.py)
-4. [Keep taking numbers from the user until 0 is entered, then print the largest number among all inputs.](phase_2_do_while_loop/q04_keep_taking_numbers_from_the_user_until_0_is.py)
-5. [Count and print the number of digits in the given number.](phase_2_do_while_loop/q05_count_and_print_the_number_of_digits_in_the_given.py)
-6. [Reverse the given number and print the reversed value.](phase_2_do_while_loop/q06_reverse_the_given_number_and_print_the_reversed.py)
-7. [Check whether the given number is a palindrome.](phase_2_do_while_loop/q07_check_whether_the_given_number_is_a_palindrome.py)
-8. [Check whether the given number is an Armstrong number.](phase_2_do_while_loop/q08_check_whether_the_given_number_is_an_armstrong.py)
-9. [Calculate and print the factorial of the given number.](phase_2_do_while_loop/q09_calculate_and_print_the_factorial_of_the_given.py)
-10. [Print the Fibonacci series up to the required number of terms.](phase_2_do_while_loop/q10_print_the_fibonacci_series_up_to_the_required.py)
-11. [Find the HCF (Highest Common Factor) of the given numbers.](phase_2_do_while_loop/q11_find_the_hcf_highest_common_factor_of_the_given.py)
-12. [Create a menu-driven program that allows the user to choose and perform different operations.](phase_2_do_while_loop/q12_create_a_menu_driven_program_that_allows_the_user.py)
-13. [Keep taking numbers from the user until a negative number is entered, then count how many positive numbers were entered.](phase_2_do_while_loop/q13_keep_taking_numbers_from_the_user_until_a.py)
-14. [Find and print the sum of digits of the given number.](phase_2_do_while_loop/q14_find_and_print_the_sum_of_digits_of_the_given.py)
-15. [Calculate and print the sum of even digits and the sum of odd digits of the given number separately.](phase_2_do_while_loop/q15_calculate_and_print_the_sum_of_even_digits_and.py)
+1. [Keep taking numbers from the user until 0 is entered, then print the sum of all entered numbers.](phase_2_do_while_loop/q01_keep_taking_numbers_from_the_user_until_0_is.py)
+2. [Keep taking numbers from the user until 0 is entered, then print the largest number among all inputs.](phase_2_do_while_loop/q02_keep_taking_numbers_from_the_user_until_0_is.py)
+3. [Count and print the number of digits in the given number.](phase_2_do_while_loop/q03_count_and_print_the_number_of_digits_in_the_given.py)
+4. [Create a menu-driven program that allows the user to choose and perform different operations.](phase_2_do_while_loop/q04_create_a_menu_driven_program_that_allows_the_user.py)
+5. [Keep taking numbers from the user until a negative number is entered, then count how many positive numbers were entered.](phase_2_do_while_loop/q05_keep_taking_numbers_from_the_user_until_a.py)
 
 ## Phase 3 : For Loop
 
